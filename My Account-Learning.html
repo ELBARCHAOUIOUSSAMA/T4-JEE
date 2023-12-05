@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head>    
+    <!-- Start Data Layer -->
+    <script>
+      if (
+        localStorage.getItem("fanCode") == undefined ||
+        localStorage.getItem("fanCode") == null
+      ) {
+        dataLayer = [
+          {
+            loginStatus: "Prospect",
+            fanCode: "Anonymous",
+          },
+        ];
+      } else {
+        dataLayer = [
+          {
+            loginStatus: "Customer",
+            fanCode: localStorage.getItem("fanCode"),
+          },
+        ];
+      }
+    </script>
+    <!--End Data Layer -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-N53PSQ9");
+    </script>
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <title>My Account</title>
+    <base href="/">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-config" content="//cdn.thefa.com/thefawebsite/assets/images/favicons/browerconfig.xml">
+    <!--[if IE
+      ]><link
+        rel="shortcut icon"
+        href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon.ico"
+    /><![endif]-->
+    <link rel="apple-touch-icon" sizes="57x57" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/apple-touch-icon-152x152.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon-128x128.png">
+    <link rel="icon" type="image/png" sizes="196x196" href="//cdn.thefa.com/thefawebsite/assets/images/favicons/www.thefa.com/favicon-196x196.png">
+    <link href="//cdn.thefa.com/thefawebsite/css/main.min.css" rel="stylesheet">
+  <style>@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13, 110, 253;--bs-secondary-rgb:108, 117, 125;--bs-success-rgb:25, 135, 84;--bs-info-rgb:13, 202, 240;--bs-warning-rgb:255, 193, 7;--bs-danger-rgb:220, 53, 69;--bs-light-rgb:248, 249, 250;--bs-dark-rgb:33, 37, 41;--bs-white-rgb:255, 255, 255;--bs-black-rgb:0, 0, 0;--bs-body-color-rgb:33, 37, 41;--bs-body-bg-rgb:255, 255, 255;--bs-font-sans-serif:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";--bs-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:#0d6efd;--bs-link-hover-color:#0a58ca;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,*:before,*:after{box-sizing:border-box}@media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}html,body{overflow-x:hidden}body{font-family:Arial,Helvetica,sans-serif;min-width:320px;background:#fff!important;padding:0}@media (max-width: 991px){body{padding:0}}@charset "UTF-8";:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-body-color-rgb:33,37,41;--bs-body-bg-rgb:255,255,255;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-bg:#fff;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-2xl:2rem;--bs-border-radius-pill:50rem;--bs-link-color:#0d6efd;--bs-link-hover-color:#0a58ca;--bs-code-color:#d63384;--bs-highlight-bg:#fff3cd}*,:after,:before{box-sizing:border-box}@media (prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}</style><link rel="stylesheet" href="styles.1744837442498d52.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.1744837442498d52.css"></noscript></head>
+
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-N53PSQ9"
+        title="blank"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <app-root></app-root>
+
+    <script>
+      window.fwSettings = {
+        widget_id: 48000002404,
+      };
+      !(function () {
+        if ("function" != typeof window.FreshworksWidget) {
+          var n = function () {
+            n.q.push(arguments);
+          };
+          (n.q = []), (window.FreshworksWidget = n);
+        }
+      })();
+    </script>
+    <script type="text/javascript" src="https://widget.freshworks.com/widgets/48000002404.js" async="" defer></script>
+
+    <!-- OneTrust Cookies Consent Notice start for My account -->
+    <script type="text/javascript" src="https://cdn-ukwest.onetrust.com/consent/0b64d9c7-047a-4d81-a7d1-fe65e6a4ac0a/OtAutoBlock.js"></script>
+    <script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="0b64d9c7-047a-4d81-a7d1-fe65e6a4ac0a"></script>
+    <script type="text/javascript">
+      function OptanonWrapper() {}
+    </script>
+    <!-- OneTrust Cookies Consent Notice end for My account -->
+  <script src="runtime.3137d4ca7632ef38.js" type="module"></script><script src="polyfills.e37a2f1d11f59706.js" type="module"></script><script src="scripts.4cb7a44e8b788cca.js" defer></script><script src="main.37d0b62601044451.js" type="module"></script>
+
+</body></html>
